@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIY-6</title>
+
+    <link rel="stylesheet" href="./CSS/T6_prg(form_events).css">
+    <script src="./JS/T6_prg(form_events).js"></script>
+</head>
+
+<body onload="welcome()">
+
+    <h1 id="heading" onclick="changeHeading()">
+        Online Book Store
+    </h1>
+
+    <hr>
+
+    <h2>Available Books</h2>
+
+    <p class="book">Book 1</p>
+    <p class="book">Book 2</p>
+    <p class="book">Book 3</p>
+
+    <button onclick="availableBooks()">Show Available Books</button>
+
+    <br><br>
+
+    <button onclick="favoriteBooks()">Show My Favourite Books</button>
+
+    <p id="count"></p>
+
+    <hr>
+
+    <h2>Search Book</h2>
+
+    <input type="text" id="search"
+           placeholder="Enter book name"
+           onkeyup="searchBook()">
+
+    <p id="searchResult"></p>
+
+    <hr>
+
+    <h2>Book Category</h2>
+
+    <select id="category" onchange="categoryChange()">
+        <option value="">Select Category</option>
+        <option value="Programming">Programming</option>
+        <option value="Database">Database</option>
+        <option value="Networking">Networking</option>
+    </select>
+
+    <p id="categoryResult"></p>
+
+    <hr>
+
+    <h2>Book Card</h2>
+
+    <div id="bookCard"
+         onmouseover="mouseOver()"
+         onmouseout="mouseOut()">
+
+        <h3>JavaScript Book</h3>
+        <p>Learn JavaScript easily.</p>
+
+    </div>
+
+    <hr>
+
+    <h2>Enquiry Form</h2>
+
+    <form onsubmit="return submitForm()">
+
+        Name:
+        <input type="text"
+               id="name"
+               onfocus="nameFocus()"
+               onblur="nameBlur()">
+
+        <br><br>
+
+        Email:
+        <input type="email" id="email">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <p id="formMessage"></p>
+
+    <hr>
+
+    <h2>Project</h2>
+
+    <a href=""
+   target="_blank">
+    View Project on GitHub
+</a>
+
+
+</body>
+</html>

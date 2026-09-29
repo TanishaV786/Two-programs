@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+h1 {
+    color: darkblue;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+}
+
+input, select {
+    padding: 8px;
+}
+
+#bookCard {
+    width: 250px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+.book {
+    color: black;
+}
+
+#formMessage {
+    color: green;
+}
